@@ -20,7 +20,10 @@ export default function Header() {
                     <NavLink to ="/register">Register</NavLink>
                 </Nav.Item>
                 <Nav.Item>
-                    <NavLink to ="/get_students/1/200">GetStudent</NavLink>
+                    <NavLink to ="/get_students">GetStudent</NavLink>
+                </Nav.Item>
+                <Nav.Item>
+                    <NavLink to ="/edit_student/:stu_id">EditStudent</NavLink>
                 </Nav.Item>
             </Nav>
     </div>
