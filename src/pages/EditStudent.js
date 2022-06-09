@@ -105,24 +105,24 @@ export default function EditStudent() {
   return(
     <>
     <Layout>
-        {
+             {
                isLoading  &&
                <div className='d-flex justify-content-center'>
                   <Spinner animation="grow" />
                </div>
-         }
-      <div>EditStudent {params.stu_id}</div>
-          <form onSubmit={(e)=>{submitStudent(e)}}>
-            <label>Enter your name:
-              <input 
-                type="text" 
-                name="friend_name" 
-                value={student.data.attributes.name}
-                onChange={(e)=>{handleChange(e)}}
-              />
-            </label>
-            <input type="submit" class={`btn btn-primary ${isSubmitted}`} />
-          </form>
+             }
+            <div>EditStudent {params.stu_id}</div>
+                <form onSubmit={(e)=>{submitStudent(e)}}>
+                  <label>Enter your name:
+                    <input 
+                      type="text" 
+                      name="friend_name" 
+                      value={student.data.attributes.name}
+                      onChange={(e)=>{handleChange(e)}}
+                    />
+                  </label>
+                  <input type="submit" class={`btn btn-primary ${isSubmitted}`} />
+                </form>
     </Layout>
     </>
   )
